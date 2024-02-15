@@ -6,7 +6,7 @@ import icons from '@/app/utils/SocialIcons';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <main className='bg-[#F8F9FB] pt-10'>
+        <main className='bg-white pt-10'>
             <section className='flex justify-center items-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     {/* LOGO AND ICONS */}
