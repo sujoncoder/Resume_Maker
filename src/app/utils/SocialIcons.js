@@ -1,7 +1,7 @@
-import Facebook from "/public/assets/icons/facebook.png";
-import Twitter from "/public/assets/icons/twitter.png";
-import LinkedIn from "/public/assets/icons/link.png";
-import Instagram from "/public/assets/icons/instagram.png";
+import Facebook from "/public/assets/icons-svg/facebook.png";
+import Twitter from "/public/assets/icons-svg/twitter.png";
+import LinkedIn from "/public/assets/icons-svg/link.png";
+import Instagram from "/public/assets/icons-svg/instagram.png";
 
 const icons = [
     {
