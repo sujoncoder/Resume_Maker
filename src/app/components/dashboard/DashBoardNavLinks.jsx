@@ -3,22 +3,29 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { BsMailboxFlag } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
-import {
-  MdAddShoppingCart,
-  MdListAlt,
-  MdOutlineRateReview,
-} from "react-icons/md";
+import { MdOutlineRateReview, MdWorkOutline } from "react-icons/md";
+import { PiNoteDuotone } from "react-icons/pi";
 
 const links = [
   { name: "Home", href: "/dashboard", icon: FaHome },
   {
-    name: "Book",
-    href: "/dashboard/book",
-    icon: MdAddShoppingCart,
+    name: "Resumes",
+    href: "/dashboard/resumes",
+    icon: PiNoteDuotone,
   },
-  { name: "Booking list", href: "/dashboard/booking-list", icon: MdListAlt },
-  { name: "Review", href: "/dashboard/review", icon: MdOutlineRateReview },
+  {
+    name: "Cover Letters",
+    href: "/dashboard/cover-letters",
+    icon: MdWorkOutline,
+  },
+  { name: "Jobs", href: "/dashboard/jobs", icon: MdOutlineRateReview },
+  {
+    name: "Applications",
+    href: "/dashboard/applications",
+    icon: BsMailboxFlag,
+  },
 ];
 
 const DashBordnavLinks = () => {

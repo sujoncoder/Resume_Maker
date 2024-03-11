@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "./components/shared/Header";
-import Footer from "./components/shared/Footer";
-import MaxWidthWrapper from "./utils/MaxWidthWrapper";
 import { usePathname } from "next/navigation";
+import Footer from "./components/shared/Footer";
+import Header from "./components/shared/Header";
+import "./globals.css";
+import MaxWidthWrapper from "./utils/MaxWidthWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +28,12 @@ export default function RootLayout({ children }) {
   const targetPath = usePathname();
 
   const headerAndFooter = ![
-    '/builder',
+    "/dashboard",
+    "/dashboard/resumes",
+    "/dashboard/cover-letters",
+    "/dashboard/jobs",
+    "/dashboard/applications",
+    "/dashboard/resumes/edit",
   ].includes(targetPath);
 
   return (
@@ -48,8 +53,10 @@ export default function RootLayout({ children }) {
   );
 }
 
-{/* <MaxWidthWrapper>
+{
+  /* <MaxWidthWrapper>
 <Header />
 {children}
 <Footer />
-</MaxWidthWrapper> */}
+</MaxWidthWrapper> */
+}
