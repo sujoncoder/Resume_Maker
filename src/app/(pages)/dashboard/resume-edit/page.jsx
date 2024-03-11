@@ -10,7 +10,7 @@ import { FaRegCircleUser } from "react-icons/fa6";
 import { FiPlus } from "react-icons/fi";
 import { LuMinus } from "react-icons/lu";
 
-const Builder = () => {
+const ResumeEdit = () => {
   return (
     <main>
       <section className="flex justify-between px-2 md:px-10">
@@ -377,4 +377,4 @@ const Builder = () => {
   );
 };
 
-export default Builder;
+export default ResumeEdit;

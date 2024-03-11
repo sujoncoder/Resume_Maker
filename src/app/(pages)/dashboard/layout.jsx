@@ -1,5 +1,6 @@
 import BreadCrumbs from "@/app/components/Breadcrumbs";
-import { User } from "@nextui-org/react";
+import Image from "next/image.js";
+import Profile from "../../../../public/assets/images/profile.png";
 import DashBoardSideNav from "../../components/dashboard/SideNave.jsx";
 
 const DashBoardLayout = ({ children }) => {
@@ -11,19 +12,23 @@ const DashBoardLayout = ({ children }) => {
 
       <div className="flex-grow p-3 md:overflow-y-auto md:p-12">
         <div className="hidden md:block">
-          <div className="w-full h-16 bg-pink-50 rounded flex justify-between items-center px-4">
+          <div className="w-full h-16 bg-[#00B6BF] rounded flex justify-between items-center px-4">
             <div>
               <BreadCrumbs />
             </div>
 
-            <div>
-              <User
-                name="Sujon Sheikh"
-                description="sujonsheikh.dev@gmail.com"
-                avatarProps={{
-                  src: "https://avatars.githubusercontent.com/u/30373425?v=4",
-                }}
+            <div className="flex justify-center items-center space-x-2">
+              <Image
+                src={Profile}
+                width={50}
+                height={50}
+                className="border-4 rounded-full border-pink-400"
               />
+
+              <div>
+                <p className="text-lg font-semibold">Sujon Sheikh</p>
+                <p className="text-sm text-slate-500">sujon@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
