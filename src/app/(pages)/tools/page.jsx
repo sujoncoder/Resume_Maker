@@ -1,11 +1,11 @@
-import React from 'react'
-
 const Tools = () => {
-    return (
-        <div>
-            <h1 className='text-4xl font-bold text-center'>Tools</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1 className="text-center font-bold my-40 text-7xl text-pink-500">
+        Tools page
+      </h1>
+    </div>
+  );
+};
 
-export default Tools
+export default Tools;

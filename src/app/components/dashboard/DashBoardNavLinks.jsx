@@ -20,11 +20,11 @@ const links = [
     href: "/dashboard/cover-letters",
     icon: MdOutlineRateReview,
   },
-  { name: "Jobs", href: "/dashboard/jobs", icon: BsMailboxFlag },
+  { name: "Jobs", href: "/dashboard/jobs", icon: MdWorkOutline },
   {
     name: "Applications",
     href: "/dashboard/applications",
-    icon: MdWorkOutline,
+    icon: BsMailboxFlag,
   },
 ];
 
@@ -39,9 +39,9 @@ const DashBordnavLinks = () => {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-medium font-medium text-slate-600 hover:bg-[#00B6BF] hover:text-[#0072B1] md:flex-none md:justify-start md:p-2 md:px-3 duration-300",
+              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-medium font-medium text-slate-600 hover:bg-cyan-100 md:flex-none md:justify-start md:p-2 md:px-3 duration-500",
               {
-                "bg-[#00B6BF] text-[#0072B1]": pathname === link.href,
+                "bg-cyan-100 text-blue-500": pathname === link.href,
               }
             )}
           >

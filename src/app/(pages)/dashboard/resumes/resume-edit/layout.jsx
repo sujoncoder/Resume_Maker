@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineDownload } from "react-icons/ai";
 import { CiEdit } from "react-icons/ci";
 import { GoArrowLeft } from "react-icons/go";
@@ -15,7 +16,9 @@ const ResumeEditLayout = ({ children }) => {
           <div className="flex justify-between items-center w-full h-20">
             <div className="flex justify-around items-center space-x-2 bg-white py-2 px-4 rounded shadow text-blue text-lg text-blue-400 font-medium cursor-pointer">
               <GoArrowLeft className="w-6 h-6" />
-              <button className="hidden md:block">Dashboard</button>
+              <Link href="/dashboard/" className="hidden md:block">
+                Dashboard
+              </Link>
             </div>
 
             <div className="flex justify-around items-center text-white space-x-2">
