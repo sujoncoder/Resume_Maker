@@ -39,9 +39,9 @@ const DashBordnavLinks = () => {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-medium font-medium text-slate-600 hover:bg-cyan-100 md:flex-none md:justify-start md:p-2 md:px-3 duration-500",
+              "flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-medium font-medium text-slate-600 md:flex-none md:justify-start md:p-2 md:px-3 duration-500",
               {
-                "bg-cyan-100 text-blue-500": pathname === link.href,
+                "bg-cyan-200 text-blue-600": pathname === link.href,
               }
             )}
           >

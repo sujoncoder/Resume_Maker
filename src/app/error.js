@@ -19,7 +19,10 @@ export default function Error({ error, reset }) {
         <div className="flex justify-center items-center">
           <div className="flex justify-center items-center space-x-2 bg-red-500 text-slate-100 py-2 px-6 rounded-md w-60 cursor-pointer my-6 text-center">
             <GrPowerReset className="w-8 h-8" />
-            <button className="text-lg" onClick={() => reset()}>
+            <button
+              className="text-lg active:bg-red-400"
+              onClick={() => reset()}
+            >
               Try again
             </button>
           </div>
