@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
     "/dashboard/cover-letters",
     "/dashboard/jobs",
     "/dashboard/applications",
-    // "/dashboard/resumes/resume-edit",
   ].includes(targetPath);
 
   return (
