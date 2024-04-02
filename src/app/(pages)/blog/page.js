@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Blog Page",
+  description: "Resume Maker Blog Page",
+};
+
 const Blog = () => {
   return (
     <div>

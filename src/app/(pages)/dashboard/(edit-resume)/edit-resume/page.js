@@ -7,6 +7,11 @@ import PersonalInfo from "@/app/components/ResumeEdit/PersonalInfo";
 import ProfessonalSummary from "@/app/components/ResumeEdit/ProfessonalSummary";
 import Skill from "@/app/components/ResumeEdit/Skill";
 
+export const metadata = {
+  title: "Resume Edit Page",
+  description: "Resume Maker Resume Edit Page",
+};
+
 const ResumeEdit = () => {
   return (
     <main className="px-20 grid grid-cols-12 gap-20">

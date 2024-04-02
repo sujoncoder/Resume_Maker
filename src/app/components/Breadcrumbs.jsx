@@ -3,6 +3,7 @@
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { GrLinkNext } from "react-icons/gr";
+
 const BreadCrumbs = () => {
   const breadPath = usePathname();
   const pathSegments = breadPath.split("/").filter((segment) => segment !== "");

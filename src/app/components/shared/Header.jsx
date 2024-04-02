@@ -1,14 +1,13 @@
 "use client";
 
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenuUnfold } from "react-icons/ai";
 import links from "../../utils/NavLinkes";
-import logo from "/public/logo.png";
-// import MaxWidthWrapper from '../../lib/MaxWidthWrapper';
+import Logo from "../header/Logo";
+
 // import Bluebtn from '../../utils/BlueBtn';
 
 const Header = () => {
@@ -22,15 +21,7 @@ const Header = () => {
   return (
     <nav className="w-full py-5 md:py-6">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/">
-          <Image
-            src={logo}
-            alt="logo image"
-            width={200}
-            height={200}
-            className="md:w-40 w-24"
-          />
-        </Link>
+        <Logo />
 
         <div className="hidden sm:flex space-x-4 items-center">
           {links.map((link) => (

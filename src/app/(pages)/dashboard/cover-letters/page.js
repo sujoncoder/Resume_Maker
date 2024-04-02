@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Cover Letter Page",
+  description: "Resume Maker Cover Letter Page",
+};
+
 const CoverLetters = () => {
   return (
     <div>

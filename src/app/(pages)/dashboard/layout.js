@@ -1,7 +1,9 @@
+"use client";
+
 import BreadCrumbs from "@/app/components/Breadcrumbs";
 import Image from "next/image.js";
 import Profile from "../../../../public/assets/images/profile.png";
-import DashBoardSideNav from "../../components/dashboard/SideNave.jsx";
+import DashBoardSideNav from "../../components/dashboard/SideNave";
 
 const DashBoardLayout = ({ children }) => {
   return (
@@ -23,6 +25,7 @@ const DashBoardLayout = ({ children }) => {
                 width={50}
                 height={50}
                 className="border-4 rounded-full border-pink-400"
+                alt="profile image"
               />
 
               <div>

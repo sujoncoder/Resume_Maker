@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Tools Page",
+  description: "Resume Maker Tools Page",
+};
+
 const Tools = () => {
   return (
     <div>

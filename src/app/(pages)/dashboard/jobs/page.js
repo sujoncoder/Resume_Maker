@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Jobs Page",
+  description: "Resume Maker Jobs Page",
+};
+
 const Jobs = () => {
   return (
     <div>

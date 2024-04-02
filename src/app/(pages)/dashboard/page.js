@@ -1,7 +1,5 @@
 "use client";
 
-// import user from "/public/assets/images/user1.png";
-
 const DashBoard = () => {
   return (
     <main>

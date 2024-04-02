@@ -1,9 +1,7 @@
-import { Spinner } from "@nextui-org/react";
-
 export default function App() {
   return (
     <div className="flex justify-center items-center h-screen">
-      <Spinner label="Loading..." color="warning" size="lg" />
+      <h1 className="text-4xl text-slate-500">Loading...</h1>
     </div>
   );
 }
